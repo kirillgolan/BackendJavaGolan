@@ -1,5 +1,13 @@
 package Lesson3;
 
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.LogDetail;
+import io.restassured.http.ContentType;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeAll;
 
 import java.io.FileInputStream;
@@ -14,6 +22,9 @@ public abstract class AbstractTest {
     private static String apiKey;
     private static String baseUrl;
 
+    protected static ResponseSpecification responseSpecification;
+
+    protected static RequestSpecification requestSpecification;
     @BeforeAll
     static void initTest() throws IOException {
         configFile = new FileInputStream("src/main/resources/my.properties");
@@ -21,6 +32,24 @@ public abstract class AbstractTest {
 
         apiKey =  prop.getProperty("apiKey");
         baseUrl= prop.getProperty("base_url");
+
+        responseSpecification = new ResponseSpecBuilder()
+                .expectStatusCode(200)
+                .expectStatusLine("HTTP/1.1 200 OK")
+                .expectContentType(ContentType.JSON)
+                .expectResponseTime(Matchers.lessThan(5000L))
+                //.expectHeader("Access-Control-Allow-Credentials", "true")
+                .build();
+
+        requestSpecification = new RequestSpecBuilder()
+                .addQueryParam("apiKey", apiKey)
+                .setContentType(ContentType.JSON)
+                //.addQueryParam("includeNutrition", "false")
+                //.log(LogDetail.ALL)
+                .build();
+
+        RestAssured.responseSpecification = responseSpecification;
+        RestAssured.requestSpecification = requestSpecification;
     }
 
     public static String getApiKey() {
@@ -30,4 +59,13 @@ public abstract class AbstractTest {
     public static String getBaseUrl() {
         return baseUrl;
     }
+
+    public RequestSpecification getRequestSpecification(){
+        return requestSpecification;
+    }
+
+    public ResponseSpecification getResponseSpecification(){
+        return responseSpecification;
+    }
+
 }
