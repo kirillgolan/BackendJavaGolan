@@ -56,8 +56,6 @@ public class HW4AddGetDelete extends AbstractTest {
     @Test
     void pizzaAdd(){
         given().spec(getRequestSpecification())
-               .queryParam("username", "kirill1")
-                .queryParam("hash", "594c042881ba02b476b56ba59b75c66a7629d275")
                 .body(addFrozenPizzaBody)
                 .when()
                 .post(getBaseUrl() + "mealplanner/kirill1/shopping-list/items")
@@ -68,8 +66,6 @@ public class HW4AddGetDelete extends AbstractTest {
     @Test
     void shoppingListGet(){
         given().spec(getRequestSpecification())
-                .queryParam("username", "kirill1")
-                .queryParam("hash", "594c042881ba02b476b56ba59b75c66a7629d275")
                 .when()
                 .get(getBaseUrl() + "mealplanner/kirill1/shopping-list")
                 .prettyPeek()
@@ -80,11 +76,9 @@ public class HW4AddGetDelete extends AbstractTest {
     @Test
     void itemDelete(){
         given().spec(getRequestSpecification())
-                .queryParam("username", "kirill1")
-                .queryParam("hash", "594c042881ba02b476b56ba59b75c66a7629d275")
-                .queryParam("id", "1272863")
+                .queryParam("id", "1272865")
                 .when()
-                .delete(getBaseUrl() + "mealplanner/kirill1/shopping-list/items/1272863")
+                .delete(getBaseUrl() + "mealplanner/kirill1/shopping-list/items/1272865")
                 .prettyPeek()
                 .then()
                 .spec(responseSpecification);

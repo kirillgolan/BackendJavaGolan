@@ -44,6 +44,8 @@ public abstract class AbstractTest {
         requestSpecification = new RequestSpecBuilder()
                 .addQueryParam("apiKey", apiKey)
                 .setContentType(ContentType.JSON)
+                .addQueryParam("username", "kirill1")
+                .addQueryParam("hash", "594c042881ba02b476b56ba59b75c66a7629d275")
                 //.addQueryParam("includeNutrition", "false")
                 //.log(LogDetail.ALL)
                 .build();
