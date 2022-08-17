@@ -35,7 +35,7 @@ public class HW4AddGetDelete extends AbstractTest {
 
 
     }
-
+    /*
     @Test
     void userCreate(){
         given().spec(getRequestSpecification())
@@ -46,13 +46,12 @@ public class HW4AddGetDelete extends AbstractTest {
                 .then()
                 .spec(responseSpecification);
 
-        //        "username": "kirill1",
-        //        "spoonacularPassword": "salmoncakeson68bluefoodcolor",
-        //        "hash": "594c042881ba02b476b56ba59b75c66a7629d275"
+                "username": "kirill1",
+                "spoonacularPassword": "salmoncakeson68bluefoodcolor",
+                "hash": "594c042881ba02b476b56ba59b75c66a7629d275"
 
     }
-
-
+*/
     @Test
     void pizzaAdd(){
         given().spec(getRequestSpecification())
