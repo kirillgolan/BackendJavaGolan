@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c0cae76-b497-48ff-ac2a-c237e701c9e6" name="Changes" comment="HomeWork3 is done">
+    <list default="true" id="6c0cae76-b497-48ff-ac2a-c237e701c9e6" name="Changes" comment="HomeWork4 is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Lesson3/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lesson3/AbstractTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +43,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.HomeWork4.chickenSoupPost">
-    <configuration name="HomeWork3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.HW4AddGetDelete.shoppingListGet">
+    <configuration name="HW4AddGetDelete.itemDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendJavaGolan" />
       <extension name="coverage">
         <pattern>
@@ -54,29 +53,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lesson3" />
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeWork3" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HomeWork3.chickenSoupPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BackendJavaGolan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Lesson3" />
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeWork3" />
-      <option name="METHOD_NAME" value="chickenSoupPost" />
+      <option name="MAIN_CLASS_NAME" value="Lesson3.HW4AddGetDelete" />
+      <option name="METHOD_NAME" value="itemDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork3.koreanGlutenFreeGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HW4AddGetDelete.pizzaAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackendJavaGolan" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +69,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lesson3" />
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeWork3" />
-      <option name="METHOD_NAME" value="koreanGlutenFreeGet" />
+      <option name="MAIN_CLASS_NAME" value="Lesson3.HW4AddGetDelete" />
+      <option name="METHOD_NAME" value="pizzaAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HW4AddGetDelete.shoppingListGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendJavaGolan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson3" />
+      <option name="MAIN_CLASS_NAME" value="Lesson3.HW4AddGetDelete" />
+      <option name="METHOD_NAME" value="shoppingListGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HW4AddGetDelete.userCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackendJavaGolan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson3" />
+      <option name="MAIN_CLASS_NAME" value="Lesson3.HW4AddGetDelete" />
+      <option name="METHOD_NAME" value="userCreate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -108,29 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeWork4.italianFoodGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BackendJavaGolan" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Lesson3" />
-      <option name="MAIN_CLASS_NAME" value="Lesson3.HomeWork4" />
-      <option name="METHOD_NAME" value="italianFoodGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HW4AddGetDelete.shoppingListGet" />
+        <item itemvalue="JUnit.HW4AddGetDelete.itemDelete" />
+        <item itemvalue="JUnit.HW4AddGetDelete.pizzaAdd" />
+        <item itemvalue="JUnit.HW4AddGetDelete.userCreate" />
         <item itemvalue="JUnit.HomeWork4.chickenSoupPost" />
-        <item itemvalue="JUnit.HomeWork4.italianFoodGet" />
-        <item itemvalue="JUnit.HomeWork3" />
-        <item itemvalue="JUnit.HomeWork3.chickenSoupPost" />
-        <item itemvalue="JUnit.HomeWork3.koreanGlutenFreeGet" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660325320065</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="HomeWork4 is done">
+      <created>1660595715586</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660595715586</updated>
+    </task>
+    <task id="LOCAL-00008" summary="HomeWork4 is done">
+      <created>1660595773084</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660595773084</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="HomeWork3 is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeWork3 is done" />
+    <MESSAGE value="HomeWork4 is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeWork4 is done" />
   </component>
 </project>
