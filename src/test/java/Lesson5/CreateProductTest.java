@@ -4,15 +4,12 @@ import com.github.javafaker.Faker;
 import Lesson5.api.ProductService;
 import Lesson5.dto.Product;
 import Lesson5.utils.RetrofitUtils;
-import lombok.SneakyThrows;
 import okhttp3.ResponseBody;
 import org.hamcrest.CoreMatchers;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import retrofit2.Response;
-import retrofit2.http.Body;
 
 import java.io.IOException;
 
@@ -54,12 +51,19 @@ public class CreateProductTest {
 
     @Test
     void modifyProduct() throws IOException {
-        product.setId(8);
+        product.setId(id);
         Response<Product> response = productService.modifyProduct(product)
                 .execute();
+        assertThat(response.isSuccessful(), CoreMatchers.is(true));
 
-        assert response.body() != null;
-        assertThat(response.body().getId(), equalTo(id));
+    }
+
+    @Test
+    void getProducts() throws IOException {
+        Response<ResponseBody> response = productService.getProducts()
+                .execute();
+
+        assertThat(response.isSuccessful(), CoreMatchers.is(true));
 
     }
 
@@ -68,8 +72,8 @@ public class CreateProductTest {
         Response<Product> response = productService.getProductById(id)
                 .execute();
 
-        assert response.body() != null;
-        assertThat(response.body().getId(), equalTo(id));
+        assertThat(response.isSuccessful(), CoreMatchers.is(true));
+
     }
 
 }
